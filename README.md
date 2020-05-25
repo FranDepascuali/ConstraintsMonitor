@@ -1,5 +1,5 @@
 # ConstraintsMonitor
-A tool to understand constraints warnings, without any additional setup.
+A tool to understand constraints warnings, only adding it as a dependency.
 
 ###
 Without **ConstraintsMonitor**:
@@ -47,7 +47,8 @@ Make a symbolic breakpoint at UIViewAlertForUnsatisfiableConstraints to catch th
 The methods in the UIConstraintBasedLayoutDebugging category on UIView listed in <UIKitCore/UIView.h> may also be helpful.
 ```
 
-
+## Why?
+I was tired of looking for constraints issues and realizing what was really the issue, so I created this mini tool for printing nicer constraints
 
 ## Installation
 ConstraintsMonitor is available through [CocoaPods](https://cocoapods.org). To install
