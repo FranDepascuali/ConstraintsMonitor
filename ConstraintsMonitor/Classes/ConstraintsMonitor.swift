@@ -77,8 +77,10 @@ extension NSLayoutConstraint {
     fileprivate func singleViewContraintMessage(view: UIView) -> String {
         let parentViewName = superviewName(view: view)
         let viewName = name(view: view)
-        return "\(parentViewName)\(viewName).\(firstAttribute) \(relation) \(constant)"
         
+        let resizingMaskMessage = super.description.contains("NSAutoresizingMaskLayoutConstraint") ? "(Did you set translatesAutoresizingMaskIntoConstraints = false?)" : ""
+        
+        return "\(parentViewName)\(viewName).\(firstAttribute) \(relation) \(constant) \(resizingMaskMessage)"
     }
     
     fileprivate func twoViewsConstraintMessage(firstView: UIView, secondView: UIView) -> String {
@@ -98,7 +100,7 @@ extension NSLayoutConstraint {
         return " ("
             + identifierPrefix
             + (showMultiplier ?
-                "multiplier: \(multiplier)" :
+                "multiplier: \(String(format: "%.3f", Double(multiplier)))" :
                 "constant: \(constant)")
             + (showPriority ?
                 ", priority: " + String(describing: priority) :

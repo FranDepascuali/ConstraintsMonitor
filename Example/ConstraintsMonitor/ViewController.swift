@@ -8,45 +8,45 @@
 
 import UIKit
 
+class MyView: UIView {
+    
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view = UIView()
+        view = MyView()
         
-//        let redView = UIView()
-//        let greenView = UIView()
-//        
-//        redView.backgroundColor = .red
-//        greenView.backgroundColor = .green
-//        
-//        [greenView, redView].forEach {
-//            $0.translatesAutoresizingMaskIntoConstraints = false
-//            view.addSubview($0)
-//        }
-//        
-//        let asdas = redView.leftAnchor.constraint(equalTo: self.view.rightAnchor)
-//        
-//        asdas.identifier = "Some constraint"
-//        
-//        NSLayoutConstraint.activate([
-////            asdas,
-//            redView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-//            redView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 23),
-//            redView.heightAnchor.constraint(equalToConstant: 40),
-//            redView.heightAnchor.constraint(greaterThanOrEqualToConstant: 50),
-//            redView.topAnchor.constraint(equalTo: self.view.topAnchor),
-//            redView.leftAnchor.constraint(equalTo: self.view.leftAnchor),
-//            
-//            redView.rightAnchor.constraint(equalTo: self.view.rightAnchor),
-//            redView.heightAnchor.constraint(equalToConstant: 200),
-//            
-//            greenView.topAnchor.constraint(equalTo: redView.bottomAnchor),
-//            greenView.leftAnchor.constraint(equalTo: self.view.leftAnchor),
-//            greenView.rightAnchor.constraint(equalTo: self.view.rightAnchor),
-//            greenView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
-//        ])
+        let redView = UIView()
+        let greenView = UIView()
+        
+        redView.backgroundColor = .red
+        greenView.backgroundColor = .green
+        
+        [greenView, redView].forEach {
+            $0.translatesAutoresizingMaskIntoConstraints = false
+            view.addSubview($0)
+        }
+        
+        let identifier = redView.leftAnchor.constraint(equalTo: self.view.rightAnchor)
+        
+        identifier.identifier = "Constraint Identifier"
+        
+        NSLayoutConstraint.activate([
+//            identifier,
+            redView.topAnchor.constraint(equalTo: self.view.topAnchor),
+            redView.leftAnchor.constraint(equalTo: self.view.leftAnchor),
+            redView.rightAnchor.constraint(equalTo: self.view.rightAnchor),
+            redView.heightAnchor.constraint(equalToConstant: 200),
+            
+            greenView.topAnchor.constraint(equalTo: redView.bottomAnchor),
+            greenView.leftAnchor.constraint(equalTo: self.view.leftAnchor),
+            greenView.rightAnchor.constraint(equalTo: self.view.rightAnchor),
+            greenView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+            greenView.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 0.2)
+        ])
         
         
 //        self.view.heightAnchor.constraint(equalToConstant: 100).isActive = true
