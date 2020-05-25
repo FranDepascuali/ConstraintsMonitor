@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ConstraintsMonitor'
   s.version          = '0.1.0'
-  s.summary          = 'A tool to understand constraints warnings. Easy setup'
+  s.summary          = 'A tool to understand constraints warnings. No setup needed.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,20 +18,16 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+ConstraintsMonitor adds some convenience extensions to print nicer constraints warnings.
                        DESC
 
   s.homepage         = 'https://github.com/FranDepascuali/ConstraintsMonitor'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'FranDepascuali' => 'francisco.depascuali@gmail.com' }
+  s.author           = { 'FranDepascuali' => 'depa.developer@gmail.com' }
   s.source           = { :git => 'https://github.com/FranDepascuali/ConstraintsMonitor.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
   s.ios.deployment_target = '9.0'
-
   s.source_files = 'ConstraintsMonitor/Classes/**/*'
-  
+  s.swift_versions = ['3.2', '4.0', '4.1', '4.2', '5.0', '5.1', '5.2']
   # s.resource_bundles = {
   #   'ConstraintsMonitor' => ['ConstraintsMonitor/Assets/*.png']
   # }

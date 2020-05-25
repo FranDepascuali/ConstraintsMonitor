@@ -1,15 +1,15 @@
 {
   "name": "ConstraintsMonitor",
   "version": "0.1.0",
-  "summary": "A tool to understand constraints warnings. Easy setup",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "A tool to understand constraints warnings. No setup needed.",
+  "description": "ConstraintsMonitor adds some convenience extensions to print nicer constraints warnings.",
   "homepage": "https://github.com/FranDepascuali/ConstraintsMonitor",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "FranDepascuali": "francisco.depascuali@gmail.com"
+    "FranDepascuali": "depa.developer@gmail.com"
   },
   "source": {
     "git": "https://github.com/FranDepascuali/ConstraintsMonitor.git",
@@ -18,5 +18,15 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "ConstraintsMonitor/Classes/**/*"
+  "source_files": "ConstraintsMonitor/Classes/**/*",
+  "swift_versions": [
+    "3.2",
+    "4.0",
+    "4.1",
+    "4.2",
+    "5.0",
+    "5.1",
+    "5.2"
+  ],
+  "swift_version": "5.2"
 }

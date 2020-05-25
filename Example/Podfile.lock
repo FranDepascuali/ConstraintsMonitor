@@ -18,7 +18,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ConstraintsMonitor: e933d47ee5f524b3149b1e0cc130255d51c93c83
+  ConstraintsMonitor: 3693a3237e0a7037aa5f811a29d158285ec49bb2
   Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
 
