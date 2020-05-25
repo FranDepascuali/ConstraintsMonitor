@@ -1,0 +1,6 @@
+framework module ConstraintsMonitor {
+  umbrella header "ConstraintsMonitor-umbrella.h"
+
+  export *
+  module * { export * }
+}
