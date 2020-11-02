@@ -51,15 +51,23 @@ The methods in the UIConstraintBasedLayoutDebugging category on UIView listed in
 I was tired of looking for constraints issues and realizing what was really the issue, so I created this mini tool for printing nicer constraints
 
 ## Installation
-ConstraintsMonitor is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+
+* [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html):
 
 ```ruby
 pod 'ConstraintsMonitor'
 ```
 
+* [Swift Package Manager](https://swift.org/package-manager/):
+
+```swift
+dependencies: [
+  .package(url: "https://github.com/FranDepascuali/ConstraintsMonitor.git", from: "1.0.1")
+]
+```
+
 ## Usage
-Just by having this lib, you will see nicer constraints warnings
+Just by including this lib in your project, you will see nicer constraints warnings
 
 ## Key Features
 * Use an identifier for the constraint if supplied.
@@ -70,7 +78,7 @@ Just by having this lib, you will see nicer constraints warnings
 By overriding the description property of the `NSLayoutConstraint` involved, we have a nicer way of viewing constraints.
 
 ## Author
-You can check my blog at https://deep-thought.netlify.com/ or @FranDepascuali in twitter.
+You can check my blog at https://deep-thought.netlify.com/ or [@FranDepascuali](https://twitter.com/FranDepascuali) in twitter.
 
 ## License
 ConstraintsMonitor is available under the MIT license. See the LICENSE file for more info.
