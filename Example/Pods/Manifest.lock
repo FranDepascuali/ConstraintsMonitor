@@ -1,5 +1,5 @@
 PODS:
-  - ConstraintsMonitor (0.1.0)
+  - ConstraintsMonitor (1.0.0)
   - Nimble (7.3.4)
   - Quick (1.2.0)
 
@@ -18,10 +18,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ConstraintsMonitor: 3693a3237e0a7037aa5f811a29d158285ec49bb2
+  ConstraintsMonitor: 3923e44b46df93bf1aae5ac95b0c4799934f5161
   Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
 
 PODFILE CHECKSUM: 02fdb14f78441a649f0fb5bdf4b3a044dfcb2547
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3

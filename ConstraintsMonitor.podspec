@@ -26,7 +26,7 @@ ConstraintsMonitor adds some convenience extensions to print nicer constraints w
   s.author           = { 'FranDepascuali' => 'depa.developer@gmail.com' }
   s.source           = { :git => 'https://github.com/FranDepascuali/ConstraintsMonitor.git', :tag => s.version.to_s }
   s.ios.deployment_target = '9.0'
-  s.source_files = 'ConstraintsMonitor/Classes/**/*'
+  s.source_files = 'Sources/**/*.swift'
   s.swift_versions = ['3.2', '4.0', '4.1', '4.2', '5.0', '5.1', '5.2']
   # s.resource_bundles = {
   #   'ConstraintsMonitor' => ['ConstraintsMonitor/Assets/*.png']

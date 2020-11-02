@@ -1,3 +1,5 @@
+import UIKit
+
 extension NSLayoutConstraint.Relation: CustomStringConvertible {
     public var description: String {
         switch self {
@@ -78,9 +80,9 @@ extension NSLayoutConstraint {
         let parentViewName = superviewName(view: view)
         let viewName = name(view: view)
         
-        let resizingMaskMessage = super.description.contains("NSAutoresizingMaskLayoutConstraint") ? "(Did you set translatesAutoresizingMaskIntoConstraints = false?)" : ""
+        let resizingMaskMessage = super.description.contains("NSAutoresizingMaskLayoutConstraint") ? " (Did you set translatesAutoresizingMaskIntoConstraints = false?)" : ""
         
-        return "\(parentViewName)\(viewName).\(firstAttribute) \(relation) \(constant) \(resizingMaskMessage)"
+        return "\(parentViewName)\(viewName).\(firstAttribute) \(relation) \(constant)\(resizingMaskMessage)"
     }
     
     fileprivate func twoViewsConstraintMessage(firstView: UIView, secondView: UIView) -> String {
